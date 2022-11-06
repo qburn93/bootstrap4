@@ -1,22 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whiskey Drop I Taste a new whiskey every month</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-    </script>
-    <script src="https://kit.fontawesome.com/27cbf33ba8.js" crossorigin="anonymous"></script>
+    <title>Whiskey Drop | Taste a new whiskey every month</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light navbar-expand-sm">
-        <a href="/" class="navbar-brand">Whiskey Drop</a>
+    <!--Nav-->
+    <nav class="navbar navbar-light navbar-expand-sm bg-light">
+        <a href="/" class="navbar-brand">
+            Whiskey Drop</a>
 
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +23,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mr-auto">
                 <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
-                <li class="active nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
+                <li class="nav-item mr-2"><a class="nav-link" href="">About</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -38,46 +36,49 @@
                         <a class="dropdown-item" href="#">American</a>
                     </div>
                 </li>
-                <li class="active nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In / Sign
-                        Up</a>
-                </li>
+
+                <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="">Sign In / Sign Up</a></li>
             </ul>
         </div>
         <div class="d-none d-md-block">
-            <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
+            <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door</i></p>
             <a href="/login">Sign In / Sign Up</a>
         </div>
+        <!--</div>-->
     </nav>
     <article class="container mt-3">
-        <!-- Callout -->
         <div class="row d-none d-sm-block">
             <div class="col-12">
                 <div class="alert alert-warning">
-                    <strong>Sale Now On!</strong>We've got a sale on. Get a 12-month subscritption for the price of
-                    6! <a href="">See here for details!</a>
+                    <strong>Sale Now On!</strong> We've got a sale on. Get a 12 month subscription for the price of 6!
+                    <a href="">See here for more details</a>
                 </div>
             </div>
+        </div>
+        <!-- Callout -->
+        <div class="row">
             <div class="col-12">
                 <section class="callout jumbotron text-center">
                     <h1>The finest whiskeys delivered to your doorstep.</h1>
                     <p class="lead">Sign up today to start receiving the world's best whiskeys every month.
-                        <s class="d-none d-sm-inline">£19.99</s>
+                        <s class="d-none d-sm-inline">€19.99</s>
                         <span class="d-inline d-sm-none"><br></span>
                         <strong><mark>First one is free!</mark></strong></p>
-                    <button class="btn btn-success btn-lg">Sign Up!</button>
-                    <p class="text-muted"><small>You must be over 18 to sign up to our service. Please, drink
+                    <p><button class="btn btn-lg btn-success" data-toggle="modal" data-target="#signUpModal">Sign
+                            Up!</button></p>
+                    <p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink
                             responsibly.</small></p>
                 </section>
             </div>
         </div>
         <!-- /.callout -->
         <hr>
-
         <!-- Quotes -->
         <section class="quotes">
             <div class="row">
                 <div class="col-12 my-5">
                     <h2 class="text-uppercase">Quotes:</h2>
+                    <hr />
                 </div>
             </div>
             <div class="row">
@@ -90,7 +91,8 @@
                             <blockquote class="blockquote">
                                 <p>I've been introduced to more than 10 great international whiskeys I never knew about.
                                 </p>
-                                <p>- Jane Doe</p>
+                                <footer class="blockquote-footer">Jane Doe on <cite title="Twitter">Twitter</cite>
+                                </footer>
                             </blockquote>
                         </div>
                     </div>
@@ -103,7 +105,8 @@
                         <div class="media-body">
                             <blockquote class="blockquote">
                                 <p>I haven't been sober for months!</p>
-                                <p>- Jane Doe</p>
+                                <footer class="blockquote-footer">Jane Doe on <cite title="Twitter">Twitter</cite>
+                                </footer>
                             </blockquote>
                         </div>
                     </div>
@@ -112,19 +115,19 @@
         </section>
         <!-- /.quotes -->
         <hr>
-
         <!-- Features -->
         <section class="features">
             <div class="row">
                 <div class="col-12 my-5">
                     <h2 class="text-uppercase">Features:</h2>
+                    <hr />
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="feature">
-                        <h3><i class="fa-solid fa-gift d-none d-sm-inline"></i> Feature 1 <span
-                                class="badge badge-success">NEW!</span></h3>
+                        <h3><i class="fas fa-gift d-none d-sm-inline"></i> Feature 1 <span
+                                class="badge badge-success">New!</span></h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -133,7 +136,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="feature">
-                        <h3><i class="fa-solid fa-credit-card d-none d-sm-inline"></i> Feature 2</h3>
+                        <h3><i class="fas fa-credit-card d-none d-sm-inline"></i> Feature 2</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -142,7 +145,7 @@
                 </div>
                 <div class="col-12 d-md-none d-lg-block col-lg-4">
                     <div class="feature">
-                        <h3><i class="fa-solid fa-circle-xmark d-none d-sm-inline"></i> Feature 3</h3>
+                        <h3><i class="fas fa-times-circle d-none d-sm-inline"></i> Feature 3</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -153,17 +156,49 @@
         </section>
         <!-- /.features -->
     </article>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    <div class="modal" tabindex="-1" id="signUpModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sign Up To Whiskey Drop!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter Email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="repeatPassword">Repeat Password</label>
+                            <input type="password" class="form-control" id="repeatPassword"
+                                placeholder="Repeat Password">
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
 </body>
 
